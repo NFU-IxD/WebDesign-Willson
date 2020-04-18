@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<link rel="stylesheet" href="css/nav style.css">
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+	html body{
+		height: 100%;
+	}
+
+/*顶部*/
+	.top{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 90px;
+		
+	}
+	.lo{
+		width: 178.2px;
+		height: 61px;
+		margin-top: 10px;
+		margin-left: 215px;
+	}
+	.nav{
+	   margin-right: 250px;
+	   margin-top: 10px;
+       padding: 0;
+	   display: inline-block;
+	   float: right;
+       height: 70px;
+	   width: 400px;
+	   height: 80px;
+	}
+	.nav p{
+		display: inline-block;
+		padding: 0 10px;
+		margin:50px 0 2px 0;
+		font: normal 700 15px "Karla", sans-serif;
+		color:#807C7C;
+	    cursor: pointer;
+	}
+	.nav p:hover{
+		color: #000000;
+	}
+.nav p:hover{
+	color: #000000!important;
+}
+.box{
+	margin-top: 80px;
+	width: 100%;
+	height: 340px;
+	position: relative;
+}
+
+.list{
+	width: 1200px;
+	height: 300px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+}
+
+.btn{
+	width: 10px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 30px;
+	font-size: 36px;
+	color:#3F3F3F;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	
+	}
+	
+.next{
+	right: 0;
+}
+
+li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+img{
+	width: 751px;
+	height: 300px;
+	border:none;
+	float: left;
+}
+.p1{
+	transform:translate3d(-224px,0,0) scale(0.81);
+	box-shadow: 0px 20px 80px -5px rgba( 0, 0, 0, 0.6 );
+}
+.p2{
+	transform:translate3d(0px,0,0) scale(0.81);
+	transform-origin:0 50%;
+	opacity: 0.8;
+	z-index: 2;
+}
+.p3{
+	transform:translate3d(224px,0,0) scale(1);
+	z-index: 3;
+	opacity: 1;
+}
+.p4{
+	transform:translate3d(449px,0,0) scale(0.81);
+	transform-origin:100% 50%;
+	opacity: 0.8;
+	z-index: 2;
+}
+.p5{
+	transform:translate3d(672px,0,0) scale(0.81);
+}
+.p6{
+	transform:translate3d(896px,0,0) scale(0.81);
+}
+.p7{
+	transform:translate3d(1120px,0,0) scale(0.81);
+}
+
+.buttons{
+	position: absolute;
+	width: 1200px;
+	height: 30px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -600px;
+	text-align: center;
+	padding-top: 10px;
+}
+.buttons a{
+	display: inline-block;
+	width: 35px;
+	height: 5px;
+	padding-top: 4px;
+	cursor: pointer;
+}
+span{
+	display: block;
+	width: 35px;
+	height: 1px;
+	background:#E1C847;
+}
+.blue{
+	background:#99999980;
+}	
+
+
+	
+
+</style>
+
+</head>
+<!--	--------------------------------------------------------------------------------------------------------->
+<body>
+	
+
+
+
+<!--这是logo-->
+	<div class="top">
+		<div class="logo">
+			<img  class="lo" width="178.2" height="61" src="logo.svg" alt="logo">
+		</div>
+	
+<!---------这是导航-------->
+	<div class="nav">
+				<p class="1">首页</p>
+				<p class="2"><a href="childhood.html" style="text-decoration:none;color: #6F6F6F;">成长</a></p>
+				<p class="3"><a href="#title-2" style="text-decoration:none;color: #6F6F6F;">作品</a></p>
+				<p class="4"><a href="list.html" style="text-decoration:none;color: #6F6F6F;">览表</a></p>
+			</div>
+   </div>
+<div class="box">
+	<div class="list">
+		<ul>
+			<li class="p7"><a href="#"><img src="img/yanhua.png" alt="" /></a></li>
+			<li class="p6"><a href="#"><img src="img/chengshi.png" alt="" /></a></li>
+			<li class="p5"><a href="#"><img src="img/xuexiang.jpg" alt="" /></a></li>
+			<li class="p4"><a href="#"><img src="img/lu.jpg" alt="" /></a></li>
+			<li class="p3"><a href="#"><img src="img/xuejing2.jpg" alt="" /></a></li>
+			<li class="p2"><a href="#"><img src="img/meizi.jpg" alt="" /></a></li>
+			<li class="p1"><a href="#"><img src="image/xuexiang_1.png" alt="" /></a></li>
+		</ul>
+	</div>
+	
+	<a href="javascript:;" class="prev btn"><</a>
+	<a href="javascript:;" class="next btn">></a>
+
+	<div class="buttons">
+		<a href="javascript:;"><span class="blue"></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+		<a href="javascript:;"><span></span></a>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+var $a=$(".buttons a");
+var $s=$(".buttons span");
+var cArr=["p7","p6","p5","p4","p3","p2","p1"];
+var index=0;
+$(".next").click(
+	function(){
+	nextimg();
+	}
+)
+$(".prev").click(
+	function(){
+	previmg();
+	}
+)
+//上一张
+function previmg(){
+	cArr.unshift(cArr[6]);
+	cArr.pop();
+	
+	$("li").each(function(i,e){
+		$(e).removeClass().addClass(cArr[i]);
+	})
+	index--;
+	if (index<0) {
+		index=6;
+	}
+	show();
+}
+
+//下一张
+function nextimg(){
+	cArr.push(cArr[0]);
+	cArr.shift();
+	$("li").each(function(i,e){
+		$(e).removeClass().addClass(cArr[i]);
+	})
+	index++;
+	if (index>6) {
+		index=0;
+	}
+	show();
+}
+
+//通过底下按钮点击切换
+$a.each(function(){
+	$(this).click(function(){
+		var myindex=$(this).index();
+		var b=myindex-index;
+		if(b==0){
+			return;
+		}
+		else if(b>0) {
+			/*
+			 * splice(0,b)的意思是从索引0开始,取出数量为b的数组
+			 * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
+			 * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
+			 * 这时候原本的数组也将这部分数组进行移除了
+			 * 再把移除的数组添加的原本的数组的后面
+			 */
+			var newarr=cArr.splice(0,b);
+			cArr=$.merge(cArr,newarr);
+			$("li").each(function(i,e){
+			$(e).removeClass().addClass(cArr[i]);
+			})
+			index=myindex;
+			show();
+		}
+		else if(b<0){
+			/*
+			 * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
+			 * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
+			 * 也就是从原本的照片到需要点击的照片的数组
+			 * 然后将原本的数组跟取出的数组进行拼接
+			 * 再次倒序,使原本的倒序变为正序
+			 */
+			cArr.reverse();
+			var oldarr=cArr.splice(0,-b)
+			cArr=$.merge(cArr,oldarr);
+			cArr.reverse();
+			$("li").each(function(i,e){
+			$(e).removeClass().addClass(cArr[i]);
+			})
+			index=myindex;
+			show();
+		}
+	})
+})
+
+//改变底下按钮的背景色
+function show(){
+		$($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
+}
+
+//点击class为p2的元素触发上一张照片的函数
+$(document).on("click",".p2",function(){
+	previmg();
+	return false;//返回一个false值，让a标签不跳转
+});
+
+//点击class为p4的元素触发下一张照片的函数
+$(document).on("click",".p4",function(){
+	nextimg();
+	return false;
+});
+
+//			鼠标移入box时清除定时器
+$(".box").mouseover(function(){
+	clearInterval(timer);
+})
+
+//			鼠标移出box时开始定时器
+$(".box").mouseleave(function(){
+	timer=setInterval(nextimg,4000);
+})
+
+//			进入页面自动开始定时器
+timer=setInterval(nextimg,4000);
+</script>
+
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+<!------------这是彩虹屁------------->
+	<div class="words">
+			<p class="zishu">Hello,<br>It's my little world</p>
+		</div>
+<!--------这是最新动态--------->
+	<div class="content">
+	<div class="title-s">
+				<h5 class="left">NEWS</h5>
+		        <h5 class="left2">BLOG</h5>
+				<div class="right">
+					<a href="https://www.baidu.com/" style="text-decoration: none;" color: #333;><h6 class="more" >MORE</h6>
+					</a>
+				</div>
+			</div>
+<!--------------这是动态照片---------->
+		<div class="picture">
+			<div class="box4">
+				<div class="photo">
+					<img width="204.64" src="image/宣传单正面.jpg" alt="">
+				</div>
+				<span>3 Oct</span>
+				<p class="photo4">招生传单</p>
+				<a>有山有水有空调<br>高大上的别墅级宿舍</a>
+			</div>
+			<div class="box5">
+				<div class="photo">
+				<img src="image/风之语录.jpg" alt="">
+				</div>
+				<span>2 Sep</span>
+				<p class="photo5">摄影交流</p>
+				<a>要采取非常的角度<br>要卧倒在地，要爬上梯子</a>
+				</div>
+			<div class="box6">
+				<div class="photo">
+					<img src="image/假如我在未来有辆车.jpg" alt="">
+				</div>
+				<span>2 Sep</span>
+				<p class="photo6">汽车</p>
+				<a>手动档汽车开得好的女性 <br>会更显得更加魅力四射</a>
+				</div>
+			<div class="box7">
+				<div class="photo">
+					<img src="image/哆啦A梦 海报设计.jpg" alt="">
+				</div>
+				<span>2 Sep</span>
+				<p class="photo7">哆啦A梦</p>
+				<a>我想一直陪在你身边<br>直到你不需要我的时候</a>
+				</div>
+		</div>
+	</div>
+<!---------这是作品集--------->
+	<div class="work">
+<!-------这是标题------->
+		<div id="title-2">
+				<h5 class="left-2">works</h5>
+			<h6 class="more-2"></h6>
+			</div>
+		<div class="suofang">
+<!---------第一视频----------------->
+				<div class="ship1">
+			      <video width="320" height="190" controls="controls" poster="image/csgo.png">
+                    <source src="video/csgo1.0.mp4" type="video/mp4" />
+                    <object data="video/csgo1.0.mp4" width="320" height="240">
+                     <embed src="video/csgo1.0.mp4" width="320" height="240" />
+                      </object>
+					</video>
+				   <h4>cogo游戏场景构建</h4>
+				   <p># 视频 #</p>
+				   <h5>more</h5>
+					
+				</div>
+<!---------第二个视频-------->
+				<div class="ship2">
+				    <video width="320" height="190" controls="controls" poster="image/wangwang.png">
+                      <source src="video/wangwang.mp4" type="video/mp4" />
+                      <object data="video/wangwang.mp4" width="320" height="240">
+                      <embed src="video/wangwang.mp4" width="320" height="240" />
+                      </object>
+                    </video>
+					  <h4>旺旺乳酸菌广告</h4>
+				      <p># 视频 #</p>
+					  <h5>more</h5>
+					</div>
+		<!---------第三个视频-------->		
+				<div class="ship3">
+				    <video width="320" height="190" controls="controls" poster="image/tai.jpg">
+                       <source src="video/tai.mp4" type="video/mp4" />
+                       <object data="video/tai.mp4" width="320" height="240">
+                       <embed src="video/tai.mp4" width="320" height="240" />
+                       </object>
+                   </video>
+					  <h4>跆拳道视频展示</h4>
+				      <p># 视频 #</p>
+					  <h5>more</h5>
+				</div>
+	<!---------流程展示-------->	
+				<div class="zhan1"> <a href="display.html">
+					<img src="image/最终设计.png" alt="" width="320"  height="190"></a>
+					<h4>在艺app项目重构</h4>
+					<p># 平面 #</p>
+					<h5> <a href="display.html"  style="text-decoration: none; color: #333;"  > more</a></h5>
+				</div>
+		<!---------流程展示-------->	
+				<div class="zhan2">
+					<img src="image/lego.png" alt="" width="320" height="190">
+					<h4>LEGO品牌展示</h4>
+					<p># 流程 #</p>
+					<h5>more</h5>
+				</div>
+		<!---------流程展示-------->	
+				<div class="zhan3">
+					<img src="image/yijia.png" alt="" width="320" height="190">
+					<h4>宜家儿童托管服务</h4>
+					<p># 流程 #</p>
+					<h5>more</h5>
+				</div>
+		</div>
+	</div>
+	<!-------------这是页脚---------->
+		<div class="footer">
+			<div class="logo2">
+			<a href="index.html">
+			<img width="178.2" height="61" src="logo.svg" alt="the logo"></a>
+		    </div>
+			<div class="contact">
+			<button type="button" class="btn-2"  >Contact Me!</button>
+		    </div>
+		<div class="menu-2">
+			<div class="nav2">
+				<p class="1">首页</p>
+				<p class="2">成长</p>
+				<p class="3">作品</p>
+				<p class="4">览表</p>
+			</div>
+			</div>
+	</div>
+	
+<div>
+    <div class="bottom">
+        <a href="index.html">
+			<img width="20" height="20" src="image/向上箭头_圈.png" alt=""></a>
+    </div>
+</div>
+ 
+
+<!--<div style="position:fixed;width:20px;height:20px;right:20px;bottom:20px;background-color:#FFFF66;"
+onclick="scrollTo(0,0)"></div>-->
+</body>
+</html>

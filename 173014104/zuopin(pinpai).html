@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="Keywords" content="">
+    <title>作品墙</title>
+    <style>
+		*{
+		padding: 0px;
+		margin: 0px;
+		}
+		
+body,html{
+	scroll-behavior: smooth;}
+
+		body{
+			/*background-color: #FFFFFF;*/
+			background: url( images/未标题-1.jpg);
+			background-repeat: repeat; 
+			
+		}
+		a:link,a:visited{/*导航栏字体的颜色字号修改*/
+		color:#000000;
+		text-decoration:none;}
+		.box1{
+			/*background: rgba(255,0,4,1.00);*/
+			height: 250px;
+			width: 800px;
+			margin: 0 auto 0 auto;
+			border-bottom: #808080 solid 1px;
+		}
+	    .daohanglan{
+			margin: 0 auto 0 auto;
+		left: 28%;
+		height: 100px;
+		width: 650px;
+	}
+	.daohanglan li{
+		display:inline;
+		padding:10px 20px;
+		margin: 20px;
+		font-weight: 200px;
+		font-size:100%;
+		float:left;
+		}
+		
+		.daohanglan li:hover{
+		border-bottom-width:2px;
+		border-bottom-style: solid;
+		border-bottom-color:#1D1C46;
+		transition: 1s;
+		}
+		.bigbox1{
+			width: 60%;
+			height: 700px;
+			/*background: rgba(123,19,21,1.00);*/
+			margin: 0 auto 0 auto;
+		}
+		.bigbox2{
+			width:100%;
+			height:250px;
+		}
+		
+		.bigbox3{
+			width:100%;
+			height: 25px;
+			background:#0B1427;
+			color: rgba(255,255,255,1.00);
+			text-align: center;
+		}
+		.bigbox4{
+			width:100%;
+			height: 130px;
+			color:#808080;
+			text-align: center;
+		}
+		
+.wrapper {
+  display: grid;
+  grid-template-columns: 220px 10px 220px 10px 220px 10px 220px;
+  grid-template-rows:  220px 10px 220px 10px 220px 10px 220px;
+}
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 150%;
+  padding: 0px;
+  text-align: center;
+}
+.p4 {
+  grid-column:7 / 8; 
+  grid-row:1/ 2; 
+  background: orange;
+	  overflow: hidden;
+}
+.p1 { 
+  grid-column: 1 / 2; 
+  grid-row: 1 / 2;
+	  overflow: hidden;
+}
+.p10 { 
+  grid-column: 3 / 4; 
+  grid-row: 1 /4;
+	overflow: hidden;
+}
+.p2 { 
+  grid-column:5/6; 
+  grid-row: 1 / 2;
+	  overflow: hidden;
+}
+.p9 { 
+  grid-column:1/ 2; 
+  grid-row: 3 /4;
+	  overflow: hidden;
+}
+.p7 {
+  grid-column: 5 / 6; 
+  grid-row: 3/4;
+	  overflow: hidden;
+}
+.p6 {
+  grid-column: 1 / 2; 
+  grid-row: 5/6;
+	  overflow: hidden;
+}
+.p3 {
+  grid-column: 3 / 4; 
+  grid-row: 5 / 6;
+  overflow: hidden;
+}
+.p8{grid-column: 5/6; 
+  grid-row:5 /6;
+  overflow: hidden;}
+.p5{grid-column: 7 /8; 
+  grid-row:3 / 6;
+	overflow: hidden;}
+		  
+
+		.p4:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}		
+		.p1:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p2:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p3:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p9:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p7:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p5:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p6:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p8:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.p10:hover img{
+			transform: scale(1.2);
+			transition-duration:0.5s;
+		}
+		.xiaoqiu{
+			margin: 200px auto 0px auto;
+			width: 50px;
+			height: 50px;
+			background: #0B1427;
+			border-radius: 50%;
+			animation-name: ball;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;/*控制方向（平滑过度）*/
+		}
+		
+		section{
+			margin: 0px auto 0px auto;
+			width: 100px;
+			height: 20px;
+			background: rgba(0,0,0,.3);
+			transform: translateY(50px);
+			z-index: -1;/*层级*/
+			border-radius: 50%;
+			filter: blur(5px);/*模糊*/
+			animation-name: shadow;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+		}
+		@keyframes shadow{
+			to{
+				height: 20px;
+				filter: blur(35px);
+				background: rgba(0,0,0,.1);
+			}
+			
+		}
+		@keyframes ball{/*球的动画*/
+			from{
+				transform: translateY(0px);
+				transform: rotate(0deg);
+			} 
+			to{
+				
+				transform: translateY(-150px);
+				border-radius: 0;
+				
+				
+			}
+			
+		}		
+		
+		.gengduozuopinjieshao{
+			height:150px;
+			width: 100%;
+			/*background: rgba(253,0,4,1.00);*/
+			text-align: center;
+		}
+		.gengduozuopinjieshao p{
+			padding: 20px 0 20px 0;
+			color:rgba(80,80,80,1.00);
+		}
+		.gengduozuopinjieshao h3{font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"}
+		.logo{
+			height:100px;
+			width: 100%;
+			/*background: rgba(24,171,70,1.00);*/
+		}
+		.logo img{
+			display: block;
+			margin: 0 auto 0 auto;
+		}
+	</style>
+<body>
+	
+	<div class="box1">
+		<div class="logo"><img src="images/logo/L ZH T.png" height="100px"></div>
+	<div class="gengduozuopinjieshao">
+		<h1>设计创作作品</h1>
+		<h3>Design works</h3>
+		<p>在大学三年时间里积累了不少作品，如虚拟现实设计、界面设计、空间设计和品牌设计等等</p>
+		
+		</div>
+	</div>
+	<ul class="daohanglan">
+	<li><a href="zuopin(xuhuan).html">虚拟现实设计</a></li>
+	<li><a href="zuopin(jiemian).html">界面设计</a></li>
+	<li><a href="zuopin(kongjian).html">空间设计</a></li>
+	<li><a href="zuopin(pinpai).html">品牌设计</a></li>
+	</ul>
+	<div class="bigbox1">
+	<div class="wrapper">
+
+  <div class="p4"><img src="images/效果.jpg" width="220px" height="220px"></div>
+  <div class="p1"><img src="images/效果2.jpg" width="220px" height="220px"></div>
+  <div class="p10"><img src="images/效果10.jpg"  height="450px"></div>
+  <div class="p2"><img src="images/效果3.jpg" width="220px" height="220px"></div>
+  <div class="p9"><img src="images/效果4.jpg" width="220px" height="220px"></div>
+  <div class="p7"><img src="images/效果8.jpg" width="220px" height="220px"></div>
+  <div class="p5"><img src="images/效果9.jpg"  height="450px"></div>
+  <div class="p6"><img src="images/效果5.jpg" width="220px" height="220px"></div>
+  <div class="p3"><img src="images/效果6.jpg" width="220px" height="220px"></div>
+  <div class="p8"><img src="images/效果7.jpg" width="220px" height="220px"></div>
+</div>
+<!--
+	<div class="table">
+            <div class="tr">
+                <div class="td"><img src= "images/p1.jpg" alt="" /></div>
+                <div class="td"></div>
+                <div class="td"><img src= "images/p4.jpg" alt="" /></div>
+                <div class="td"><img src= "images/p5.jpg" alt="" /></div>
+            </div>
+            <div class="tr">
+                <div class="td"><img src="images/p2.jpg" alt="" /></div>
+                <div class="td"><img src="images/p7.jpg" alt="" /></div>
+                <div class="td"><img src= "images/p6.jpg" alt="" /></div>
+                <div class="td"></div>
+            </div>
+		<div class="tr">
+                <div class="td"><img src="images/p8.jpg" alt="" /></div>
+                <div class="td"><img src= "images/p9.jpg" alt="" /></div>
+                <div class="td"><img src= "images/p10.jpg" alt="" /></div>
+                <div class="td"></div>
+            </div>
+        </div>
+-->
+
+	</div>
+	<div class="bigbox2">
+		<div class="xiaoqiu"></div>
+        <section></section>
+    </div>
+
+	<div class="bigbox4">
+	<small>更多作品请联系：<br>QQ：&nbsp;&nbsp;1220639541@qq.com<br>WeChat:&nbsp;&nbsp;1220639541<br>TEL:&nbsp;&nbsp;18122039123</small>
+	</div>
+	<div class="bigbox3">
+	<small><i>Copyright &copy; 2019 中山大学南方学院</i></small></div>
+
+</body>
+</head>
+</html>

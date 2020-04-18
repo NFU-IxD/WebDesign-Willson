@@ -1,0 +1,712 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bj{
+	
+    width: 100%;
+    height: 1500px;
+	background-color:#FFFFFF;	
+}
+
+
+.words{
+	
+	margin: 60px 0 80px 0;
+	padding: 0;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	                                      
+}
+.words p{
+	font: normal 500 36px "Libre Baskerville";
+	position: absolute;
+	left: 617px;
+	top: 86px;
+	color: #807C7C;
+}
+/*.words h3{
+	font: normal 600 40px "Libre Baskerville";
+	position: absolute;
+	top:100px;
+	left: 40%;
+	font-size: 20px;
+}*/
+.content{                                        
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 0;
+	width: 66%;
+	height: 40%px;
+	/*background-color:#68A1D680;*/
+}
+.title-s{
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 100%;
+	height: 90px;
+	position: relative;
+}
+.title-s .left {
+	font: normal 600 26px "Libre Baskerville";
+    letter-spacing: 0.08rem;
+	margin: 30px 0 0 15px;
+	padding: 0;
+	color:#807C7C;
+	display:inline-block;
+}
+.title-s .left2 {
+	font: normal 400 24px "Libre Baskerville";
+    letter-spacing: 0.08rem;
+	margin: 30px 0 0 15px;
+	padding: 0;
+	color: #E1C847;
+	display:inline-block;
+}
+.right{
+	display: inline-block;
+	float: right;
+	margin:30px 20px 0 0;
+	width: 100px;
+	height: 32px;
+	position: relative;
+	z-index: 99;
+	/*background-color: #F80D0D;*/
+}
+.more{
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	color:#807C7C;
+	font-size: 14px;	
+}
+.right a{
+	background-color: #9D2B2D;
+	width: 100px;
+	height: 40px;
+}
+.right a img{
+	position: absolute;
+	right: 5px;
+	bottom:5px;
+	display: inline-block;
+	/*background-image: url(), linear-gradient (#fff100);*/
+}
+.right::before{
+	    content: "";
+		width: 32px;
+		height:24px;
+		background-color: #fff100;
+		border-radius: 10px;
+		position: absolute;
+		top: 6px;
+		right: 1px;
+		z-index: -99;
+		display: none;
+}
+.right:hover::before{
+		display: block;
+	}
+.right:hover {
+		color: #fff;
+	}
+.picture{
+	margin: 0 auto;
+	padding: 0;
+	
+}
+.box4{
+	margin: 0;
+	padding: 0;
+	width: 18%;
+	height: 446px;
+	background-color:#FFFFFF;
+	position: relative;
+	display: inline-block;
+	margin: 0px 80px 0 12px;
+}
+.photo img{
+ width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:120%;
+}
+.box4 p{
+	display: inline-block;
+	margin-top:30px;
+	width: 100%;
+	font: normal 700 14px "Karla", sans-serif;
+	color: #E1C847;
+}
+.box4 span{
+	font-size: 12px;
+	width: 40px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 177px;
+	background-color: #E1C847;
+	transform: scale(1,1);
+	opacity: 1;
+}
+.box4 a{
+	font-size: 12px;
+	color:#807C7C; 
+	
+}
+.box4:hover img{
+	transform: scale(1.1,1.1);
+	transition: all 1.5s ease-in;
+}
+.box4:hover span{
+	transform: scale(0.8,0.8);
+	opacity: 0;
+	transition: all 1.5s ease-in;
+}
+
+
+.box5{
+	margin: 0;
+	padding: 0;
+	width: 18%;
+	height: 446px;
+	background-color:#FFFFFF;
+	position: relative;
+	display: inline-block;
+	margin-right: 80px;
+}
+.box5 span{
+	font-size: 12px;
+	width: 40px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 177px;
+	background-color: #E1C847;
+	transform: scale(1,1);
+	opacity: 1;
+}
+.box5 p{
+	display: inline-block;
+	margin-top:30px;
+	width: 100%;
+	font: normal 700 14px "Karla", sans-serif;
+	color: #E1C847;
+}
+.box5 a{
+	font-size: 12px;
+	color:#807C7C; 
+}
+.box5:hover img{
+	transform: scale(1.1,1.1);
+	transition: all 1.5s ease-in;
+}
+.box5:hover span{
+	transform: scale(0.8,0.8);
+	opacity: 0;
+	transition: all 1.5s ease-in;
+}
+.box6{
+	margin: 0;
+	padding: 0;
+	width: 18%;
+	height: 446px;
+	background-color:#FFFFFF;
+	position: relative;
+	display: inline-block;
+	margin-right: 80px;
+}
+.box6 span{
+	font-size: 12px;
+	width: 40px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 177px;
+	background-color: #E1C847;
+	transform: scale(1,1);
+	opacity: 1;
+}
+.box6 p{
+	display: inline-block;
+	margin-top:30px;
+	width: 100%;
+	font: normal 700 14px "Karla", sans-serif;
+	color: #E1C847;
+}
+.box6 a{
+	font-size: 12px;
+	color:#807C7C; 
+}
+.box6:hover img{
+	transform: scale(1.1,1.1);
+	transition: all 1.5s ease-in;
+}
+.box6:hover span{
+	transform: scale(0.8,0.8);
+	opacity: 0;
+	transition: all 1.5s ease-in;
+}
+.box7{
+	margin: 0;
+	padding: 0;
+	width: 18%;
+	height: 446px;
+	background-color:#FFFFFF;
+	position: relative;
+	display: inline-block;
+}
+.box7 span{
+	font-size: 12px;
+	width: 40px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 177px;
+	background-color: #cE1C847;
+	transform: scale(1,1);
+	opacity: 1;
+}
+.box7 p{
+	display: inline-block;
+	margin-top:30px;
+	width: 100%;
+	font: normal 700 14px "Karla", sans-serif;
+	color: #E1C847;
+}
+.box7 a{
+	font-size: 12px;
+	color:#807C7C; 
+}
+.box7:hover img{
+	transform: scale(1.1,1.1);
+	transition: all 1.5s ease-in;
+}
+.box7:hover span{
+	transform: scale(0.8,0.8);
+	opacity: 0;
+	transition: all 1.5s ease-in;
+}
+          /*这是作业展示*/
+.work{
+	margin: 0 auto;
+	padding: 0;
+	width: 66%;
+	height:80%;
+	
+}
+
+#title-2 h5{
+	font: normal 600 26px "Libre Baskerville";
+    letter-spacing: 0.08rem;
+	margin: 100px 0 20px 15px;
+	padding: 0;
+	color:#807C7C;
+	display:inline-block;
+	position: relative;
+	
+}
+#title-2 h6{
+	display: inline-block;
+	margin: 0;
+	color:#807C7C;
+	font-size: 14px;	
+	position: absolute;
+	left: 30px;
+}
+.suofang{
+	margin: 0;
+	padding: 0;
+
+}
+.ship1{
+	margin: 0 14px 0 0;
+	padding: 0;
+	width: 32%;
+	height: 290px;
+	display: inline-block;
+	position: relative;
+	
+}
+
+.ship1 h4{
+	margin: 0;
+	color: #E1C847;
+	font-size: 14px;
+}
+.ship1 p{
+	margin: 10px 0 0 0;
+	color: #333232;	
+	font-size: 12px;
+	font: normal 600 12px "Karla", sans-serif;
+}
+.ship1 h5{
+	margin: 0 ;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border-bottom: 2px solid #E1C847;
+	position: absolute;
+	bottom: 24px;
+	left: 110px;
+	z-index: 99;
+}
+.ship1 h5::before{
+	content: "";
+	width:100px;
+	height: 30px;
+	background-color: #E1C847;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -99;
+	display: none;
+}
+.ship1 h5:hover::before{
+	display: block;
+}
+
+.ship1:hover{
+	opacity: 0.8;
+	transition: all 1s ease-in;
+}
+
+
+/*这是第二张*/
+.ship2{
+	margin: 0 14px 0 0;
+	padding: 0;
+	width: 32%;
+	height: 290px;
+	position: relative;
+	display: inline-block;
+}
+.ship2 h4{
+	margin: 0;
+	color: #E1C847;
+	font-size: 14px;
+}
+.ship2 p{
+	margin: 10px 0 0 0;
+	color: #333232;
+	font-size: 12px;
+	font: normal 600 12px "Karla", sans-serif;
+}
+.ship2 h5{
+	margin: 0 ;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border-bottom: 2px solid #E1C847;
+	position: absolute;
+	bottom: 24px;
+	left: 110px;
+	z-index: 99;
+}
+.ship2 h5::before{
+	content: "";
+	width:100px;
+	height: 30px;
+	background-color: #E1C847;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	z-index: -99;
+	display: none;
+}
+.ship2 h5:hover::before{
+	display: block;
+}
+.ship2:hover{
+	opacity: 0.8;
+	transition: all 1s ease-in;
+}
+/*这是第三张*/
+.ship3{
+	margin: 0;
+	padding: 0;
+	width: 32%;
+	height:290px;
+	display: inline-block;
+	position: relative;
+}
+.ship3 h4{
+	margin: 0;
+	color: #E1C847;
+	font-size: 14px;
+}
+.ship3 p{
+	margin: 10px 0 0 0;
+	color: #333232;	
+	font-size: 12px;
+	font: normal 600 12px "Karla", sans-serif;
+}
+.ship3 h5{
+	margin: 0 ;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border-bottom: 2px solid #E1C847;
+	position: absolute;
+	bottom: 24px;
+	left: 110px;
+	z-index: 99;
+}
+.ship3 h5::before{
+	content: "";
+	width:100px;
+	height: 30px;
+	background-color: #E1C847;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -99;
+	display: none;
+}
+.ship3 h5:hover::before{
+	display: block;
+}
+.ship3:hover{
+	opacity: 0.8;
+	transition: all 1s ease-in;
+}
+/*这是流程*/
+/*第一张*/
+.zhan1{
+	margin: 60px 14px 0 0 ;
+	padding: 0;
+	width: 32%;
+	height:290px;
+	display: inline-block;
+	position: relative;
+}
+.zhan1 img{
+	width: 320px;
+	height: 190px;
+}
+.zhan1 h4{
+	margin: 0;
+	color: #E1C847;
+	font-size: 14px;
+}
+.zhan1 p{
+	margin:   10px 0 0 0;
+	color: #333232;	
+	font-size: 12px;
+	font: normal 600 12px "Karla", sans-serif;
+}
+.zhan1 h5{
+	margin: 0 ;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border-bottom: 2px solid #E1C847;
+	position: absolute;
+	bottom: 24px;
+	left: 110px;
+	z-index: 99;
+}
+.zhan1 h5::before{
+	content: "";
+	width:100px;
+	height: 30px;
+	background-color: #E1C847;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -99;
+	display: none;
+}
+.zhan1 h5:hover::before{
+	display: block;
+}
+.zhan1:hover{
+	opacity: 0.8;
+	transition: all 1s ease-in;
+}
+/*第二张*/
+.zhan2{
+	margin: 60px 14px 0 0 ;
+	padding: 0;
+	width: 32%;
+	height:290px;
+	display: inline-block;
+	position: relative;
+}
+.zhan2 img{
+	width: 320px;
+	height: 190px;
+}
+.zhan2 h4{
+	margin:0;
+	color: #E1C847;
+	font-size: 14px;
+}
+.zhan2 p{
+	margin: 10px 0 0 0;
+	color: #333232;	
+	font-size: 12px;
+	font: normal 600 12px "Karla", sans-serif;
+}
+.zhan2 h5{
+	margin: 0 ;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border-bottom: 2px solid #E1C847;
+	position: absolute;
+	bottom:24px;
+	left: 110px;
+	z-index: 99;
+}
+.zhan2:hover{
+	opacity: 0.8;
+	transition: all 1s ease-in;
+}
+/*第三张*/
+.zhan3{
+	margin: 60px 0 0 0 ;
+	padding: 0;
+	width: 32%;
+	height:290px;
+	display: inline-block;
+	position: relative;
+}
+.zhan3 img{
+	width: 320px;
+	height: 190px;
+}
+.zhan3 h4{
+	margin: 0;
+	color: #E1C847;
+	font-size: 14px;
+}
+.zhan3 p{
+	margin: 10px 0 0 0;
+	color: #333232;	
+	font-size: 12px;
+	font: normal 600 12px "Karla", sans-serif;
+}
+.zhan3 h5{
+	margin: 0 ;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	text-align: center;
+	border-bottom: 2px solid #E1C847;
+	position: absolute;
+	bottom:24px;
+	left: 110px;
+	z-index: 99;
+}
+.zhan3:hover{
+	opacity: 0.8;
+	transition: all 1s ease-in;
+}
+/*页脚*/
+.footer{
+	margin: 80px  0 10px 0;
+	padding: 0;
+	width: 100%;
+	height: 250px;
+	background-color:#fff10080;
+	position: relative;
+}
+
+.logo2{
+	margin: 0 ;
+	padding: 0;
+	width: 180px;
+	height: 62px;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	
+}
+.logo2 img{
+	width: 178.2px;
+	height: 61px;
+}
+.contact{
+	 width:300px;
+	 height: 50px;
+	 position: absolute;
+	 bottom: 30px;
+	 left: 200px;	
+}
+ .btn-2 {
+	 width: 300px;
+	 height: 50px;
+	 -webkit-trsansition-duration:0.4s;
+	 transition-duration: 0.4s;
+	 text-align: center;
+	 background-color: white;
+	 color: black;
+	 border: 2px solid #FFFFFF;
+	 border-radius: 5px;
+	
+        }
+ .btn-2:hover {
+           background-color: #fff10080;
+           color: white;
+        }
+.menu-2{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+.nav2{
+	width: 50px;
+	height: 208px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 280px;
+	top: 40px;
+}
+.nav2 p{
+	font: normal 600 13px "Karla", sans-serif;
+	list-style: none;
+	width:50px;
+	height: 52px;
+	text-align: center;
+	cursor: pointer;
+	color:#131313;
+}
+.nav2 p:hover {
+	    width: 50px;
+	    height: 25px;
+	    border-radius: 8px;
+		background-color:#FFFFFF;
+	    color:#2F2F2F;
+	}
+.bottom{
+	position:fixed;
+	bottom:6px;
+	right: 6px;
+}
+
+.bottom img{
+	width: 40px;
+	height: 40px;
+}
+
+@media screen and (max-width:650px) {
+	.box{width: 100%}
+}
+@media screen and (max-width:1000px)  and (min-width:651px) {
+	.box{width: 50%}
+}
+@media screen and (min-width:1001px) {
+	.box{width: 33.33%}
+}

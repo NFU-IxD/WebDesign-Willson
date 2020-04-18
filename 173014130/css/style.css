@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.top{
+	width: 100%;
+	height: 90px;
+	overflow: visible;
+	vertical-align: middle;
+	display: block;
+	
+}
+.logo{
+	display: inline-block;
+    padding: 0 15px;
+	margin-top:30px;
+	margin-left: 200px;
+	vertical-align:middle;
+	line-height: 30px;
+}
+.manu{
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	height: 80px;
+	float: right;
+    padding-right: 10px;
+    overflow: visible;
+
+}
+.nav{
+	margin: 0;
+	margin-left: 80px;
+	margin-top: 10px;
+    padding: 0;
+    height: 70px;
+	width: 400px;
+	height: 80px;
+   
+	
+}
+.nav li{
+	letter-spacing: .05em;
+	font: normal 700 15px "Karla", sans-serif;
+	list-style: none;
+	float: right;
+	width: 60px;
+	height: 50px;
+	line-height: 48px;
+	margin-top: 30px;
+	text-align: center;
+	color:#807C7C;
+	cursor: pointer;
+}
+.nav li a{
+	text-decoration: none;
+	color:#807C7C;
+}
+
+.nav li:hover{
+			color: #000000;
+		}
+.nav li a:hover{
+	color: #000000!important;
+}
+.search{
+	display: inline-block;
+	float:right;
+	width: 40px;
+	height: 40px;
+	margin-top: -60px;
+	margin-right: 50px;
+}
+.banner{
+	margin-top: 50px;
+    padding:0px;
+	display:block;
+	width: 100%;
+	height: 520px;
+	background-color: #f3f3f3;
+}
+
+
+

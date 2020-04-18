@@ -1,0 +1,225 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+/*初始化标签开始*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	list-style: none;
+	text-decoration:none;
+
+}
+
+/*初始化标签结束*/
+
+/*统一样式开始*/
+button{
+	cursor:pointer;
+}
+
+.aside-left{
+	float:left;
+	width:350px;
+     margin-right:20px;
+}
+
+.main{
+/*创建BFC,可避开浮动*/
+	overflow:hidden;
+}
+
+.aside-right{
+	float:right;
+	width:265px;
+	margin-left:30px;
+}
+
+/*统一样式结束*/
+
+/*重置按钮开始*/
+button{
+border:none;
+outline:none;
+outline-offset:0;
+background:initial;
+}
+/*重置按钮结束*/
+
+
+/*更多的缩进*/
+input[type="text"].more-text-indent{
+	padding-left:60px;
+}
+
+
+
+
+/*首页通用样式开始*/
+ 
+.section{
+	padding:35px 0;
+}
+
+.section:nth-child(even){
+	background:rgba(125,76,175,0.1)
+}
+
+a{
+	color:#a768e6;
+}
+
+a:hover{
+   background:#a768e6;
+   color:#fff;
+
+   	
+}
+
+a:active{
+   background:#37a;
+   color:#fff;
+}
+
+ul{
+	word-break:break-all;
+}
+
+aside-left .title{
+  font-size:24px;
+}
+
+/*首页通用样式结束*/
+
+
+.header-bgm{
+	background-color:rgba(125,76,175,0.1);
+}
+
+
+.box{
+   list-style:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+    margin-top:-100px;
+    margin-left:-100px;
+	transform-style:preserve-3d;
+   
+    transform:rotateX(0deg) rotateY(0deg);
+	list-style:none;
+	width:200px;
+	height:200px;
+	animation:ani 10s linear infinite;
+}
+
+@keyframes ani{
+	from{
+	 transform:rotateX(0deg) rotateY(0deg);
+	}to{
+	transform:rotateX(360deg) rotateY(360deg);
+	}
+}
+
+.box-front,
+.box-back,
+.box-left,
+.box-right,
+.box-top,
+.box-bottom{
+	position:absolute;
+	width:200px;
+	height:200px;
+	background-color:purple;
+	opacity:0.8;
+	line-height:200px;
+	text-align:center;
+	font-size:40px;
+	color:white;
+}
+
+.box-front:hover,
+.box-back:hover,
+.box-left:hover,
+.box-right:hover,
+.box-top:hover,
+.box-bottom:hover{
+	opacity:0.2;
+}
+
+
+
+
+.box-front{
+    transform:translateZ(100px);
+    background-image:url(images/box-front.png)
+
+ 
+}
+
+.box-back{
+    transform:translateZ(-100px);
+    background-image:url(images/box-back.png)
+}
+
+.box-left{
+    transform:rotateY(-90deg) translateZ(100px);
+    background-image:url(images/box-left.png)
+}
+
+.box-right{
+    transform:rotateY(90deg) translateZ(100px);
+    background-image:url()
+}
+
+.box-top{
+    transform:rotateX(-90deg) translateZ(100px);
+    background-image:url(images/box-top.png)
+}
+
+.box-bottom{
+    transform:rotateX(90deg) translateZ(100px);
+    background-image:url(images/box-bottom.png)
+}
+
+
+/*作品开始*/
+#main{
+    padding:35px 0 0 0;
+    text-align:center;
+	width:950px;
+	background-color:#515151;
+    
+	overflow:hidden;
+}
+
+.main-left,
+.main-right,
+.main-center{
+	height:600px;
+	line-height:600px;
+	float: left;
+	width:20%;
+    background-color: yellowgreen;
+}
+
+.main-left{
+	
+}
+
+.main-center{
+	width:60%;
+	border-left:10px solid #ffffff;
+	border-right:10px solid #ffffff;
+	box-sizing:border-box;
+}
+
+.main-right{
+
+}
+/*作品结束*/
+
+

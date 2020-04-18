@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>作品</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="works.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body class="header-bgm">
+<header class="header">
+         <div class="header-container clearfix">
+            <div class="header-logo float-left">
+               <h1>
+                  <a href="index.html">logo</a>      
+               </h1>
+            </div>
+            <div class="header-search float-left">
+         <form>
+               <input type="text" class="header-txt" placeholder="作品、日志">
+               <button>
+                  <img src="images/sousuo.png">
+               </button>
+          </form>
+            
+            </div>
+            <div class="works-color">
+            <nav class="header-menu 
+            float-right clearfix">
+               <a href="index.html" target="_blank" class="menu-homepage">主页</a>
+               <a href="about.html" target="_blank" class="menu-about">关于我</a>
+               <a href="photo.html" target="_blank" class="menu-photo">相册</a>
+               <a href="works.html" class="menu-works">作品</a>
+               <a href="journal.html" target="_blank" class="menu-log">日志</a>  
+               <a href="list.html" target="_blank" class="menu-list">一览表</a>
+            </nav>
+            </div>
+         </div>
+   </header>
+
+  <!-- 第一横幅开始 -->
+  <div class="banner-works clearfix">
+   <div class="banner-container-works clearfix">
+  <div id="div1">
+  </div>
+  <script type="text/javascript">
+    var arr = ['images/works-one.png','images/works-two.png','images/works-three.png','images/works-four.png']
+    var z =9999999;
+    var index = 0;
+boom(8,6);
+function boom(l,t){
+  // console.log(1)
+    var oparentNode = document.createElement('div');
+    oparentNode.style.zIndex = z;
+    z--;
+    div1.appendChild(oparentNode);
+    var x = l;
+  var y = t;
+  for(var i = 0;i < y;i++){
+    for(var j = 0;j < x;j++){
+
+     var oDiv = document.createElement('div');
+
+     oDiv.style.background = 'url('+arr[index]+')';
+     oDiv.style.width = div1.clientWidth / x + 'px';
+     oDiv.style.height = div1.clientHeight / y + 'px';
+     oDiv.style.left = (div1.clientWidth / x) * j +'px';
+     oDiv.style.top = (div1.clientHeight / y) * i +'px';
+     oDiv.style.backgroundPositionX = (div1.clientWidth / x) * -j + 'px';
+      oDiv.style.backgroundPositionY = (div1.clientHeight / y) * -i +'px';
+      oDiv.style.transition=(Math.random()*1+0.5)+'s';
+
+     oparentNode.appendChild(oDiv); 
+    }
+  };
+
+  var allDiv = oparentNode.children;
+setTimeout(()=>{
+  index++;
+  index == arr.length && (index = 0);
+  boom(l,t);
+  for(var i = 0; i < allDiv.length;i++){
+    allDiv[i].style.transform='perspective(800px) translateX('+(Math.random()*400-200)+'px)translateY('+(Math.random()*400-200)+'px) rotateY('+(Math.random()*360-180)+'deg) rotateX('+(Math.random()*360-180)+'deg) translateZ('+(Math.random()*200+100)+'px)'
+    allDiv[i].style.opacity= 0; 
+
+  };
+},2000);
+
+
+  //boom(l,t);
+
+  setTimeout(function(){
+    oparentNode.remove();  // = ''
+    // boom(10,10);
+  },3500);
+}
+
+
+  // setTimeout(function(){
+  // for(var i = 0; i < allDiv.length;i++){
+  //   allDiv[i].style.transform='perspective(800px) translateX(0px)translateY(0px) rotateY(0deg) rotateX(0deg) translateZ(0px)'  
+  //   }
+  // },3000)
+  </script>
+
+
+   </div>
+ </div>
+    <!-- 第一横幅结束 -->
+
+    <!-- 第二横幅开始 -->
+    <div class="works-da">
+    <div class="works-box">
+
+    <div class="works-center">
+   <h3 class="works-h3">学校女厕改造详细设计过程</h3>
+     <p class="works-p">厕所改造动机</p>
+  </div>
+<div class="works-wapper">
+<div class="ye"><p class="works-dong">4教1楼女厕里面存在着很多问题，比如：卫生、设备的缺失和破败、标识不清等等，这些问题没有直接导致整个厕所荒废，但是因为这些问题会让上厕所的人出现各种各样尴尬、懊恼的事情，比如：东西掉进厕所、进错厕所、上厕所发出各种奇怪的声音等，还有一些不是因为设备而出现的囧事，这些情况都会增加人们对厕所的厌恶。人们对于厕所的厌恶来源于多方面的，主要原因是在厕所里面会发生各种尴尬、懊恼的囧事，但是厕所对于人们来说又是不可或缺的场所，所以我们要想办法降低人们对4教1楼女厕的厌恶感。</p>
+
+
+<!-- <div class="xue"><img src="images/s1.jpg" /><img src="images/s2.jpg" /><img src="images/s3.jpg" /></div> -->
+<div class="float-left works-xiao clearfix">
+<div class="works-box1">
+<a href="diaoyan.html" target="_blank">前期调研</a></div>
+<div class="works-box2"></div>
+<div class="works-box3"><a href="fangansheji.html" target="_blank">设计方案</a></div>
+<div class="works-box4"><a href="pinggu.html" target="_blank">评估研究</a></div>
+<div class="works-box5"></div>
+<div class="works-box6"><a href="tounao.html" target="_blank">头脑风暴</a></div>
+</div>
+</div>
+</div>
+
+
+  <!-- <h3 class="center">Professional Business Marketing Services</h3>
+  <p class="center">You can get Quality Services</p>
+  < -->
+
+      <!-- 第二横幅结束 -->

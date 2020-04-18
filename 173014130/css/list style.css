@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	
+}
+.logo{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: fixed;
+	top: 41px;
+	left: 43px;
+}
+.nav2{
+	width: 50px;
+	height: 208px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 120px;
+	left: 55px;
+}
+.nav2 p{
+	font: normal 600 13px "Karla", sans-serif;
+	list-style: none;
+	width:50px;
+	height: 52px;
+	text-align: center;
+	cursor: pointer;
+	color:#131313;
+}
+.nav2 p:hover {
+	    width: 50px;
+	    height: 25px;
+	    border-radius: 8px;
+		background-color: #E1C847;
+	    color:#ffffff;
+	}
+ .box1 {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+	    height: 1000px;
+      }
+      #left {
+        flex: 1; /* 左侧固定200px */
+        height: 100%;
+        border-left: 1px solid #807C7C80;
+      }
+h4{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top:20px;
+	left: 220px;
+	color: #E1C847;
+}
+      #right {
+        flex: 0 0 500px ; 
+        height: 100%;
+	border-left: 1px solid #E1C847;
+/*        background:#E1C84790;*/
+		position: relative;
+      }
+.text{
+	margin: 0;
+	padding: 0;
+	width: 80%;
+	display: inline-block;
+	background-color:#B4B4B480;
+	
+
+}
+span{
+	display: inline-block;
+	width: 300px;
+
+}
+.a{
+	margin: 120px 0 0 0;
+	cursor: pointer;
+	position: absolute;
+	right: 40px;
+	z-index: 99;
+}
+.a:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+
+.a::before{
+	content: "";
+	width: 700px;
+	height: 500px;
+	background-image: url("../image/buju.jpg");
+	position: absolute;
+	right: 600px;
+	top:30px;
+	z-index: -99;
+	display: none;
+}
+.a:hover::before{
+	display: block;
+}
+
+.b{
+	margin: 200px 0 0 0;
+	cursor: pointer;
+	position: absolute;
+	right: 50px;
+	z-index: 99;
+}
+.b:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.b::before{
+	content: "";
+	width: 644px;
+	height: 165px;
+	background-image: url( "../image/donghua.png");
+	position: absolute;
+	right: 600px;
+	top:30px;
+	z-index: -99;
+	display: none;
+}
+.b:hover::before{
+	display: block;
+}
+.c{
+	margin: 280px 0 0 0;
+	position: absolute;
+	right: 40px;
+	z-index: 99;
+}
+.c:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.c::before{
+	content: "";
+	width: 800px;
+	height: 600px;
+	background-image: url(  "../image/liudong.jpg");
+	position: absolute;
+	right: 500px;
+	top:-10px;
+	z-index: -99;
+	display: none;
+}
+.c:hover::before{
+	display: block;
+}
+.d{
+	margin: 360px 0 0 0;
+	position: absolute;
+	right: 24px;
+	z-index: 99;
+}
+.d:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.d::before{
+	content: "";
+	width: 400px;
+	height: 600px;
+	background-image: url( "../image/wu.jpg");
+	position: absolute;
+	right: 600px;
+	top:-100px;
+	z-index: -99;
+	display: none;
+}
+.d:hover::before{
+	display: block;
+}
+.e{
+	margin: 440px 0 0 0;
+	position: absolute;
+	right: 3px;
+	z-index: 99;
+}
+.e:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.e::before{
+	content: "";
+	width: 800px;
+	height: 470px;
+	background-image: url(  "../image/jiagou.png"  );
+	position: absolute;
+	right: 500px;
+	top:-150px;
+	z-index: -99;
+	display: none;
+}
+.e:hover::before{
+	display: block;
+}
+.f{
+	margin: 520px 0 0 0;
+	position: absolute;
+	right: 9px;
+	z-index: 99;
+}
+.f:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.f::before{
+	content: "";
+	width: 700px;
+	height: 700px;
+	background-image: url(  "../image/弹窗.jpg");
+	position: absolute;
+	right: 600px;
+	top:-300px;
+	z-index: -99;
+	display: none;
+}
+.f:hover::before{
+	display: block;
+}
+.g{
+	margin: 600px 0 0 0;
+	position: absolute;
+	right: 18px;
+	z-index: 99;
+}
+.g:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.g::before{
+	content: "";
+	width: 840px;
+	height: 700px;
+	background-image: url(   "../image/自适应.jpg");
+	position: absolute;
+	right: 500px;
+	top:-400px;
+	z-index: -99;
+	display: none;
+}
+.g:hover::before{
+	display: block;
+}
+.h{
+	margin: 680px 0 0 0;
+	position: absolute;
+	right: 18px;
+	z-index: 99;
+}
+.h:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.h::before{
+	content: "";
+	width: 860px;
+	height: 700px;
+	background-image: url(  "../image/biaojpg.jpg");
+	position: absolute;
+	right: 500px;
+	top:-500px;
+	z-index: -99;
+	display: none;
+}
+.h:hover::before{
+	display: block;
+}
+.i{
+	margin: 760px 0 0 0;
+	position: absolute;
+	right:30px;
+	z-index: 99;
+}
+.i:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.i::before{
+	content: "";
+	width: 600px;
+	height: 600px;
+	background-image: url(  "../image/崩.png");
+    background-size: 50% 50%;
+	position: absolute;
+	right: 500px;
+	top:-500px;
+	z-index: -99;
+	display: none;
+}
+.i:hover::before{
+		display: block;
+}
+.j{
+	margin: 840px 0 0 0;
+	position: absolute;
+	right:65px;
+	z-index: 99;
+}
+.j:hover {  
+	transform: scale(1.1,1.1);
+	transition: all 0.8s ease-in;
+}
+.j::before{
+	content: "";
+	width: 600px;
+	height: 600px;
+	background-image: url(  "../image/luanma.jpg");
+    
+	position: absolute;
+	right: 500px;
+	top:-600px;
+	z-index: -99;
+	display: none;
+}
+.j:hover::before{
+		display: block;
+}	

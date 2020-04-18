@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>sheen.fun</title>
+        <link rel="icon" href="picture/鱼头.png" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet"type="text/css"href="swiper.min.css">
+    </head>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            width: 100%;
+        }
+        .menu{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-wrapper{
+            padding: 8px;
+            width: 100%;
+            height: 0px;
+        }
+        .logo{
+            float:left;
+            padding: 8px;
+            margin-left: 40px;
+            margin-top:16px;
+        }
+        .logo a{
+            color:#fff;
+            /* text-transform: uppercase; */
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+        .nav-wrapper ul{
+            float:right;
+            box-sizing: border-box;
+        }
+        .nav-wrapper ul li{
+            display:block;
+            float: left;
+        }
+        .nav-wrapper a:hover{
+            color: #3FA9F5;
+        }
+        .nav-wrapper ul li:not(:first-child){
+            margin-left: 48px;
+        }
+        .nav-wrapper ul li:last-child{
+            margin-right: 48px;
+        }
+        .nav-wrapper ul li a{
+            display: inline-block;
+            outline: none;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+        }
+        @media screen and (max-width: 864px){
+            .logo{
+                padding: 8;
+                box-sizing: border-box;
+            }
+            .nav-wrapper{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: #000;
+                opacity:0;
+                transition: all 0.2s ease;
+                box-sizing: border-box;
+            }
+            .nav-wrapper ul{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width:100%;
+                box-sizing: border-box;
+            }
+            .nav-wrapper ul li{
+                display: block;
+                float: none;
+                width:100%;                    
+                text-align: right;
+                margin-bottom: 10px;
+            }
+            .nav-wrapper ul li:nth-child(1) a{
+                transition-delay: 0.2s;
+            }
+            .nav-wrapper ul li:nth-child(2) a{
+                transition-delay: 0.3s;
+            }
+            .nav-wrapper ul li:nth-child(3) a{
+                transition-delay: 0.4s;
+            }
+            .nav-wrapper ul li:nth-child(4) a{
+                transition-delay: 0.5s;
+            }
+            .nav-wrapper ul li:not(:first-child){
+                 margin-left: 0; 
+            }
+            .nav-wrapper ul li a{
+                padding: 10px 24px;
+                opacity: 0;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                transform: translateX(-20px);
+                transition: all 0.2s ease;
+            }
+            .nav-btn{
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                display: block;
+                width: 48px;
+                height: 48px;
+                display: block;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+                z-index: 9999;
+                border-radius: 50%;
+            }
+            .nav-btn i{
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                border-radius: 2px;
+                margin-left: 14px;
+            }
+            .nav-btn i:nth-child(1){
+                margin-top: 16px;
+            }
+            .nav-btn i:nth-child(2){
+                margin-top: 4px;
+                opacity: 1;
+            }
+            .nav-btn i:nth-child(3){
+                margin-top: 4px;
+            }
+        }
+         #nav:checked + .nav-btn{
+            transform: rotate(45deg);
+        }
+        #nav:checked + .nav-btn i{
+            background: #fff;
+            transition: transfotm 0.2s ease;
+        }
+        #nav:checked+ .nav-btn i:nth-child(1){
+            transform: translateY(6px) rotate(180deg);
+        }
+        #nav:checked+ .nav-btn i:nth-child(2){
+            opacity: 0;
+        }
+        #nav:checked+ .nav-btn i:nth-child(3){
+            transform: translateY(-6px) rotate(90deg);
+        }
+        #nav:checked~.nav-wrapper{
+            z-index: 9990;
+            opacity: 1;
+        }
+        #nav:checked~.nav-wrapper ul li a{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .hidden{
+            display: none;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 400px;
+            height: 500px;
+            background: #fff;
+        }
+        .swiper-slide .imgBx{
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .swiper-slide .imgBx img{
+            width:100%;
+        }
+        .swiper-slide .details{
+            height: 100px;
+            box-sizing:border-box;
+            padding: 20px;
+        }
+        .swiper-slide .details h3{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: #2c3e50;
+        }
+        .swiper-slide .details span {
+            font-size: 15px;
+            color: #000000;
+            font-weight: 400;
+        }
+    </style>
+    <body>
+        <div class="menu">
+            <nav>
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav"class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <a href="index.html">sheen.fun</a>
+                </div>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="index.html"target="_blank">HOME</a></li>
+                        <li><a href="project.html"target="_blank">PROJECT</a></li>
+                        <li><a href="share.html"target="_blank">SHARE</a></li>
+                        <li><a href="about.html"target="_blank">ME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" >
+                    <div class="imgBx">
+                        <img src="picture/project-1.png">
+                    </div>
+                    <div class="details">
+                        <h3>《v-lab》<br><span>vlog生态社交app</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="imgBx">
+                        <img src="picture/project-2.png">
+                    </div>
+                    <div class="details">
+                        <h3>《朴宿微澜》<br><span>ue4 场景</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="imgBx">
+                        <img src="picture/project-3.jpg">
+                    </div>
+                    <div class="details">
+                        <h3>《广州的故事》<br><span>广州传统文化概念展</span></h3>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="imgBx">
+                        <img src="picture/project-4.jpg">
+                    </div>
+                    <div class="details">
+                        <h3>《声音的磁性》<br><span>电磁流声音交互装置</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script type="text/javascript" src="swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows : true,
+              },
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+          </script>
+    </body>

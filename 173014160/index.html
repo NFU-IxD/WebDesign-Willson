@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>sheen.fun</title>
+        <link rel="icon" href="picture/鱼头.png" type="image/x-icon"/>
+    </head>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            width: 100%;
+            height: 100vh;
+        }
+        .menu{
+            width: 100%;
+            height: 8vh;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-wrapper{
+            padding: 8px;
+            width: 100%;
+            height: 0px;
+        }
+        .logo{
+            float:left;
+            padding: 8px;
+            margin-left: 40px;
+            margin-top:16px;
+        }
+        .logo a{
+            color:#fff;
+            /* text-transform: uppercase; */
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+        .nav-wrapper ul{
+            float:right;
+            box-sizing: border-box;
+        }
+        .nav-wrapper ul li{
+            display:block;
+            float: left;
+        }
+        .nav-wrapper a:hover{
+            color: #3FA9F5;
+        }
+        .nav-wrapper ul li:not(:first-child){
+            margin-left: 48px;
+        }
+        .nav-wrapper ul li:last-child{
+            margin-right: 48px;
+        }
+        .nav-wrapper ul li a{
+            display: inline-block;
+            outline: none;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+        }
+        @media screen and (max-width: 864px){
+            .logo{
+                padding: 8;
+                box-sizing: border-box;
+            }
+            .nav-wrapper{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: #000;
+                opacity:0;
+                transition: all 0.2s ease;
+                box-sizing: border-box;
+            }
+            .nav-wrapper ul{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width:100%;
+                box-sizing: border-box;
+            }
+            .nav-wrapper ul li{
+                display: block;
+                float: none;
+                width:100%;                    
+                text-align: right;
+                margin-bottom: 10px;
+            }
+            .nav-wrapper ul li:nth-child(1) a{
+                transition-delay: 0.2s;
+            }
+            .nav-wrapper ul li:nth-child(2) a{
+                transition-delay: 0.3s;
+            }
+            .nav-wrapper ul li:nth-child(3) a{
+                transition-delay: 0.4s;
+            }
+            .nav-wrapper ul li:nth-child(4) a{
+                transition-delay: 0.5s;
+            }
+            .nav-wrapper ul li:not(:first-child){
+                 margin-left: 0; 
+            }
+            .nav-wrapper ul li a{
+                padding: 10px 24px;
+                opacity: 0;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                transform: translateX(-20px);
+                transition: all 0.2s ease;
+            }
+            .nav-btn{
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                display: block;
+                width: 48px;
+                height: 48px;
+                display: block;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+                z-index: 9999;
+                border-radius: 50%;
+            }
+            .nav-btn i{
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                border-radius: 2px;
+                margin-left: 14px;
+            }
+            .nav-btn i:nth-child(1){
+                margin-top: 16px;
+            }
+            .nav-btn i:nth-child(2){
+                margin-top: 4px;
+                opacity: 1;
+            }
+            .nav-btn i:nth-child(3){
+                margin-top: 4px;
+            }
+        }
+         #nav:checked + .nav-btn{
+            transform: rotate(45deg);
+        }
+        #nav:checked + .nav-btn i{
+            background: #fff;
+            transition: transfotm 0.2s ease;
+        }
+        #nav:checked+ .nav-btn i:nth-child(1){
+            transform: translateY(6px) rotate(180deg);
+        }
+        #nav:checked+ .nav-btn i:nth-child(2){
+            opacity: 0;
+        }
+        #nav:checked+ .nav-btn i:nth-child(3){
+            transform: translateY(-6px) rotate(90deg);
+        }
+        #nav:checked~.nav-wrapper{
+            z-index: 9990;
+            opacity: 1;
+        }
+        #nav:checked~.nav-wrapper ul li a{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .hidden{
+            display: none;
+        }
+
+        /* .banner{
+            margin: 0;
+            padding: 0;
+            max-width: 50%;
+            max-height: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        } */
+        .banner img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-height: 70%;
+            max-width: 60%;
+        }
+        .wrap{
+            width: 100vw;
+            height:92vh;
+        }
+        .bubbles{
+            width:100%;
+            height: 94vh;
+            position: absolute;
+            z-index: 0;
+            overflow: hidden;
+            bottom: 0;
+            left: 0;
+        }
+        .bubble{
+            background: #f1f1f1;
+            /* border: 1px solid #ffffff; */
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            opacity: 0.5;
+            animation: flying 10s infinite ease-in;
+        }
+        .bubble:nth-child(1){
+            width: 40px;
+            height: 40px;
+            left: 10%;
+            animation-duration: 8s;
+        }
+        .bubble:nth-child(2){
+            width: 20px;
+            height: 20px;
+            left: 20%;
+            animation-duration: 5s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(3){
+            width: 50px;
+            height: 50px;
+            left: 35%;
+            animation-duration: 10s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(4){
+            width: 80px;
+            height: 80px;
+            left: 50%;
+            animation-duration: 7s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(5){
+            width: 35px;
+            height: 35px;
+            left: 55%;
+            animation-duration: 6s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(6){
+            width: 45px;
+            height: 45px;
+            left: 55%;
+            animation-duration: 8s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(7){
+            width: 25px;
+            height: 25px;
+            left: 75%;
+            animation-duration: 7s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(8){
+            width: 80px;
+            height: 80px;
+            left: 80%;
+            animation-duration: 6s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(9){
+            width: 15px;
+            height: 15px;
+            left: 70%;
+            animation-duration: 9s;
+            animation-delay: 0s;
+        }
+        .bubble:nth-child(10){
+            width: 50px;
+            height: 50px;
+            left: 85%;
+            animation-duration: 5s;
+            animation-delay: 0s;
+        }
+        @keyframes flying{
+            0%{
+                bottom: -100px;
+                transform: translateX(0);
+            }
+            50%{
+                transform: translateX(100px);
+            }
+            100%{
+                bottom: 1080px;
+                transform: translateX(-200px);
+            }
+        }
+        
+        .tittle{
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            color: #fff;
+        }
+        .tittle h1{
+            font-size: 60px;
+            color: #3FA9F5;
+        }
+        .tittle p{
+            font-size: 55px;
+            color: #fff;
+            font-weight: 500;
+        }
+    </style>
+    <body>
+        <div class="menu">
+            <nav>
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav"class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <a href="#">sheen.fun</a>
+                </div>
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="index.html"target="_blank">HOME</a></li>
+                        <li><a href="project.html"target="_blank">PROJECT</a></li>
+                        <li><a href="share.html"target="_blank">SHARE</a></li>
+                        <li><a href="about.html"target="_blank">ME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="banner">
+            <img src="picture/头像.png">
+        </div>
+        <div class="wrap">
+            <div class="tittle">
+                <h1>sheen.fun<p>LOVING DESIGN</p></h1>
+            </div>
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </div>
+    </body>

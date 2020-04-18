@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日志</title>
+<link rel="stylesheet" type="text/css" href="journal.css">
+ <link rel="stylesheet" type="text/css" href="index.css">
+ <script type="text/javascript" src="js/jquery.js" ></script>
+</head>
+<body>
+
+<header class="header">
+         <div class="header-container clearfix">
+            <div class="header-logo float-left">
+               <h1>
+                  <a href="index.html">logo</a>      
+               </h1>
+            </div>
+            <div class="header-search float-left">
+         <form>
+               <input type="text" class="header-txt" placeholder="作品、日志">
+               <button>
+                  <img src="images/sousuo.png">
+               </button>
+          </form>
+            
+            </div>
+            <nav class="header-menu float-right clearfix">
+               <a href="index.html" target="_blank" class="menu-homepage">主页</a>
+               <a href="about.html" target="_blank" class="menu-about">关于我</a>
+               <a href="photo.html" target="_blank" class="menu-photo">相册</a>
+               <a href="works.html" target="_blank" class="menu-works">作品</a>
+               <a href="journal.html" class="menu-log">日志</a>  <a href="list.html" target="_blank" class="menu-log">一览表</a> 
+            </nav>
+         </div>
+         
+           <div class="da">
+         <div class="bann-da"><img src="images/joural.banner.jpg"  width="900" height="350"/></div>
+
+<div class="ai">
+<div class="hao">
+   
+   <img src="images/ai1.jpg" id="img" width="450" height="250">
+</div>
+<div class="hzi"><h3>运动</h3><p>运动是生命的源泉一切乐境，都是由运动而来；一切苦境，也可由运动解脱。</p><p>要成为德、智、体兼优的劳动者，锻炼身体极为重要。身体健康是求学和将来工作之本。运动能使人身体健康，对学习有促进作用。</p><p>有粉笔的气味，各处布满参差裂痕的玻璃窗，远处传来的运动部的声音，夕阳投出的片片樱瓣倩影，风景开始变迁。</p></div>
+
+</div><div class="cleafix"></div>
+
+
+<div class="ai">
+<div class="hao items" style="overflow: hidden;padding-top: 20px;">
+   <img src="images/b1.jpg" width="25%" height="80" style="float: left;" />
+   <img src="images/a2.jpg" width="25%" height="80" style="float: left;"/>
+   <img src="images/a3.jpg" width="25%" height="80" style="float: left;"/>
+   <img src="images/a1.jpg" width="25%" height="80" style="float: left;"/>
+   <img src="images/a4.jpg" width="25%" height="80" style="float: left;"/>
+   <img src="images/ai1.jpg" width="25%" height="80" style="float: left;"/>
+   <img src="images/b2.jpg" width="25%" height="80" style="float: left;"/>
+   <img src="images/b3.jpg" width="25%" height="80" style="float: left;"/>
+</div>
+<div class="hzi"><h3>经典语录</h3><p>1、一个人总是要忘记一些事情，那么他才能记住另外一些事情。</p>
+   <p>2、即使生活在阴沟，也要抬头仰望星空。</p>
+   <p>3、他不敢冒险，因为他害怕失败，害怕变回那个失败者，因为他配不上今天的成功。</p>
+   <p>4、最怕自己庸碌无为，还安慰自己平凡可贵。</p>
+<p>4、年轻人的那种蠢，也是天才的一部分。</p></div>
+
+</div><div class="cleafix"></div>
+
+
+
+
+
+<script>
+   $(function(){
+      $('.items img').each(function(){
+         $(this).mouseover(function(){
+            var attrs=$(this).attr('src');
+            $('#img').attr('src',attrs)
+         })
+      })
+   })
+</script>
+</div>
+
+   </header>
